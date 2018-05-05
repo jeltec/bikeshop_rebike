@@ -6,7 +6,7 @@ Student No.:  20078727
 
 ## Overview.
 
-#Description
+Description
 
 ReBike Bikeshop is a charity in which people can rent or buy a bike and donate it back when they don't need it anymore. Those who do not have a bike to donate, can always donate some money for a good cause.
 The webapp is divided in 2, one is checking all the donated bikes and adding a bike, the other is checking all the money donated an donating some money yourself.
@@ -22,9 +22,25 @@ If you click on 'like(s)' button, the amount of likes gets updated and the bike 
 If you click on 'show' button, this specific bike will open on a new page on which you can check this specific bike out.
 If you click on the 'X' button (delete), the bike gets deleted and isn't shown on the bikes overview.
 
-All data will be stored in the MongoDB bikesdb and donationsdb
+All data will be stored in the MongoDB bikesdb and donationsdb in following schemas:
 
+var bikeSchema = new mongoose.Schema({
+    year: Number,
+    type: String,
+    brand: String,
+    users: {type: Number, default: 0},
+    gender: String
+});
 
+var DonationSchema = new mongoose.Schema({
+    paymenttype: String,
+    amount: Number,
+    upvotes: {type: Number, default: 0}
+});
+
+For the design I used bootstrap material design found on: https://fezvrasta.github.io/bootstrap-material-design/
+
+Link to git repo: https://github.com/jeltec/bikeshop_rebike
 
 ## Acceptance Testing.
 
@@ -55,14 +71,4 @@ MacBook-Pro-Jelte:bikeshop jelte$ npm run acceptance
 
   9 passing (11s)
 
-
-## Continuous Integration.
-
-Build passes.
-
-Travis link: https://travis-ci.org/jeltec/BikeShop/
-
-Coverall link: https://coveralls.io/github/jeltec/BikeShop
-
-heroku link: https://dashboard.heroku.com/apps/rebikeshop
 
