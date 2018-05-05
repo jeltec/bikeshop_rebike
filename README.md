@@ -50,7 +50,7 @@ MacBook-Pro-Jelte:bikeshop jelte$ npm run acceptance
 > cross-env NODE_ENV=test PORT=4000 mocha test/acceptance/
 
 
-
+$
   Add bike page
     ✓ shows the main header (56ms)
     ✓ accepts bike and displays bike in list (570ms)
@@ -70,5 +70,5 @@ MacBook-Pro-Jelte:bikeshop jelte$ npm run acceptance
 
 
   9 passing (11s)
-
+$
 
