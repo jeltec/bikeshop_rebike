@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   height="575"
+   width="575"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="wrench-bike-icon.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   sodipodi:modified="TRUE"
+   inkscape:export-filename="/home/bnesbitt/temp/test.png"
+   inkscape:export-xdpi="4.2362185"
+   inkscape:export-ydpi="4.2362185">
+  <title
+     id="title68846">Bicycle repair station</title>
+  <metadata
+     id="metadata13">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Bicycle repair station</dc:title>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Bryce Nesbitt</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title>Unrestricted</dc:title>
+          </cc:Agent>
+        </dc:rights>
+        <dc:description>Wrench plus bicycle symbol</dc:description>
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title>BeaOriginal</dc:title>
+          </cc:Agent>
+        </dc:contributor>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs11" />
+  <sodipodi:namedview
+     inkscape:window-height="972"
+     inkscape:window-width="1109"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10.0"
+     gridtolerance="10.0"
+     objecttolerance="10.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#7a70ff"
+     id="base"
+     inkscape:zoom="0.56137931"
+     inkscape:cx="65.445908"
+     inkscape:cy="277.88698"
+     inkscape:window-x="160"
+     inkscape:window-y="24"
+     inkscape:current-layer="svg2"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-maximized="0" />
+  <circle
+     d="m 376,409 c 0,88.91784 -72.08216,161 -161,161 -88.91784,0 -161,-72.08216 -161,-161 0,-88.91784 72.08216,-161 161,-161 88.91784,0 161,72.08216 161,161 z"
+     sodipodi:ry="161"
+     sodipodi:rx="161"
+     sodipodi:cy="409"
+     sodipodi:cx="215"
+     id="FrontWheel"
+     style="fill:#ffffff;fill-opacity:0;stroke:#ffffff;stroke-width:40px;stroke-opacity:1"
+     cx="215"
+     cy="409"
+     r="161"
+     transform="matrix(0.60458861,0,0,0.612193,-17.150257,185.3049)" />
+  <circle
+     d="m 951,406 c 0,88.91784 -72.08216,161 -161,161 -88.91784,0 -161,-72.08216 -161,-161 0,-88.91784 72.08216,-161 161,-161 88.91784,0 161,72.08216 161,161 z"
+     sodipodi:ry="161"
+     sodipodi:rx="161"
+     sodipodi:cy="406"
+     sodipodi:cx="790"
+     id="RearWheel"
+     style="fill:#ffffff;fill-opacity:0;stroke:#ffffff;stroke-width:40px;stroke-opacity:1"
+     cx="790"
+     cy="406"
+     r="161"
+     transform="matrix(0.60458861,0,0,0.612193,-17.150257,185.3049)" />
+  <path
+     inkscape:connector-curvature="0"
+     d="m 242.5111,194.77376 c -80.14818,0.791 -66.5558,-8.38456 -109.67646,131.93826 -35.128111,112.11783 -31.30181,99.89097 -31.48553,107.75543 -0.12875,6.10982 4.74199,10.95404 10.86261,11.36869 12.72877,-1.30322 7.37476,1.39395 51.50523,-137.36977 161.25113,172.24394 100.75374,144.31296 187.5332,147.81092 114.05102,-1.10739 123.32093,6.01158 124.67496,-10.91575 -0.15624,-5.74792 -2.81222,-9.17557 -81.08559,-185.56784 l 7.49924,-20.88232 25.77866,-0.4746 -0.93741,-21.83151 -96.08407,0 c -8.48873,11.75949 3.43716,11.70675 46.40158,21.35692 l -7.49925,21.3569 -191.69945,0.47461 c 12.91536,-45.66688 5.62443,-42.8193 63.74358,-42.71383 l 0.4687,-22.30611 z m -69.75152,88.427 187.58171,-0.33678 L 306.12885,430.3714 172.75958,283.20076 z m 210.19793,8.75614 -53.21466,141.44548 116.40708,0.33677 -63.19242,-141.78225 z"
+     id="Frame"
+     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.60837889000000001;stroke-opacity:1" />
+  <path
+     style="fill:#ffffff;fill-opacity:1"
+     inkscape:connector-curvature="0"
+     id="path68800"
+     d="M 11.229434,152.84908 81.252414,144.80329 91.810879,112.62016 73.471527,83.655336 1.7813338,93.846126 c 0,0 18.3393522,-59.002952 62.2420932,-63.830423 0,0 38.345913,-6.435018 56.685273,16.629027 l 16.67213,17.699115 c 0,0 17.78417,22.528195 56.68527,17.164876 l 340.11162,0 12.78253,0.535849 c 0,0 15.00492,-1.609157 15.5601,14.482411 l 0,30.573979 c 0,0 2.77925,16.09157 -20.56175,18.77403 l -367.34388,0 c 0,0 -20.56175,-2.145 -30.56503,13.40911 l -16.67214,19.84573 c 0,0 -27.23227,34.32814 -76.136652,11.79994 0,0.002 -23.339326,-8.04417 -40.011464,-38.08069 z" />
+</svg>

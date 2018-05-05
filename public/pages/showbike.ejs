@@ -1,0 +1,14 @@
+<div class="jumbotron" align="center">
+    <h1>Selected bike</h1>
+    <div ng-controller="showbikeController as list">
+        <div id="showbike" ng-repeat="bike in bikes" class="card" style="height: 32rem; width: 25rem; display: inline-block; margin: 10px 10px 10px 10px;" >
+            <img class="card-img-top" src="./images/bicycle.gif" alt="Card image cap">
+            <div class="card-body">
+                <h5 style="font-weight: bold" class="card-title">{{bike.brand}}</h5>
+                <h5 class="card-title">{{bike.type}} ({{bike.gender}})</h5>
+                <p class="card-text">With this beautiful "{{bike.type}}", not a hill is too high or a place too far. Suitable for adventurous people.</p>
+                <button disabled type="button" class="btn btn-default"><span><img src="./images/thumbsup.svg"> </span>{{bike.users}} like(s)</button>
+            </div>
+        </div>
+    </div>
+</div>

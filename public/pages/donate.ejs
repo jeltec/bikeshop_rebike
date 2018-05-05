@@ -1,0 +1,33 @@
+<div id="donate" class="jumbotron" align="center">
+	<h1>Donate money for a good cause</h1>
+
+  <p>{{message}}</p>
+	
+<div ng-controller="donateController" align="center" >
+
+  <div id="donatecard" align="center" class="card" style="height: 230px; width: 70%;">
+    <form style="vertical-align: middle" ng-submit="addDonation()" align="center" class="card-img-top">
+      <div class="form-group" align="center">
+        <select id="type"
+                ng-model="formData.paymentOptions"
+                class="form-control"
+                ng-show="formData.paymentOptions"
+                ng-options="option.name for option in options"
+                ng-style="{'width': 150 + 'px'}">
+        </select>
+      </div>
+      <div class="form-group" align="center">
+        <input id="amount"
+               type="number"
+               class="form-control"
+               placeholder="Amount"
+               ng-model="formData.amount"
+               ng-style="{'width': 150 + 'px'}"></input>
+      </div>
+      <button id="donatebtn" type="submit" class="btn btn-danger" data-toggle="snackbar" data-content="{{message}} <a href='#donate' class='btn btn-danger'>Donate again</a> <button class='btn btn-danger'>x</button" data-html-allowed="true" data-timeout="0">
+        Donate
+      </button>
+    </form>
+  </div>
+</div>
+</div>

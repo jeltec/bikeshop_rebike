@@ -1,0 +1,37 @@
+<div id="bikes" class="jumbotron" align="center">
+    <h1>All donated bikes</h1>
+
+    <p>{{ message }}</p>
+    <button style="align-self: center" type="button" class="btn btn-danger" ng-click="typeFilter = {}" ng-model="formData.road" value="road">
+        All bikes
+    </button>
+    <button style="align-self: center" type="button" class="btn btn-danger" ng-click="typeFilter = {type: 'Road bike'}" ng-model="formData.road" value="road">
+        Road bikes
+    </button>
+    <button style="align-self: center" type="button" class="btn btn-danger" ng-click="typeFilter = {type: 'BMX'}" ng-model="formData.bmx" value="bmx">
+        BMX bikes
+    </button>
+    <button style="align-self: center" type="button" class="btn btn-danger" ng-click="typeFilter = {type: 'City bike'}" ng-model="formData.city" value="city">
+        City bikes
+    </button>
+    <button style="align-self: center" type="button" class="btn btn-danger" ng-click="typeFilter = {type: 'Mountain bike'}" ng-model="formData.mountain" value="mountain">
+        Mountain bikes
+    </button>
+    <div ng-controller="bikesController as list">
+        <div id="bikes" ng-repeat="bike in bikes | orderBy:'-users' | filter:typeFilter"  class="card" style="height: 28rem; width: 18rem; display: inline-block; margin: 10px 10px 10px 10px;" >
+            <img class="card-img-top" src="./images/bicycle.gif" alt="Card image cap">
+            <div class="card-body">
+                <h5 name="bikeheader" style="font-weight: bold" class="card-title">{{bike.brand}}</h5>
+                <h5 class="card-title">{{bike.type}} ({{bike.gender}})</h5>
+                <p class="card-text">With this beautiful "{{bike.type}}", not a hill is too high or a place too far. Suitable for adventurous people.</p>
+                <button type="button" class="btn btn-default" ng-click="incrementUsers(bike._id)"><span><img src="./images/thumbsup.svg"> </span>{{bike.users}} like(s)</button>
+                <button name="show" type="button" class="btn btn-default" ng-click="find(bike._id)">
+                    Show
+                </button>
+                <button style="align-self: center" type="button" class="btn btn-danger" ng-click="delete(bike._id)">
+                    x
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

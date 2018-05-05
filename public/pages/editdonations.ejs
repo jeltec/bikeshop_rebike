@@ -1,0 +1,29 @@
+<div class="jumbotron" align="center">
+    <h1>Edit Donation</h1>
+    <div ng-controller="editdonationController">
+                <div id="donatecard" align="center" class="card" style="height: 230px; width: 70%;">
+                    <form style="vertical-align: middle" ng-submit="edit()" align="center" class="card-img-top">
+                        <div class="form-group" align="center">
+                            <select id="type"
+                                    ng-model="formData.paymentOptions"
+                                    class="form-control"
+                                    ng-show="formData.paymentOptions"
+                                    ng-options="option.name for option in options"
+                                    ng-style="{'width': 150 + 'px'}">
+                            </select>
+                        </div>
+                        <div class="form-group" align="center">
+                            <input id="amount"
+                                   type="number"
+                                   class="form-control"
+                                   placeholder="Amount"
+                                   ng-model="formData.amount"
+                                   ng-style="{'width': 150 + 'px'}"></input>
+                        </div>
+                        <button type="submit" class="btn btn-danger" data-toggle="snackbar" data-content="Donation edited! <a href='#donate' class='btn btn-danger'>Donate</a> <button class='btn btn-danger'>x</button" data-html-allowed="true" data-timeout="0">
+                            Edit
+                        </button>
+                    </form>
+                </div>
+    </div>
+</div>

@@ -1,0 +1,73 @@
+<html ng-app="Bikeshop" >
+<head>
+  <title>Bikeshop</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./stylesheets/style.css">
+  <link href="../public/map.js">
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular-route.js"></script>
+
+  <script src="/javascripts/angularApp.js"></script>
+  <script src="/javascripts/controllers/maincontroller.js"></script>
+  <script src="/javascripts/controllers/donatecontroller.js"></script>
+  <script src="/javascripts/controllers/donationscontroller.js"></script>
+  <script src="/javascripts/controllers/addbikecontroller.js"></script>
+  <script src="/javascripts/controllers/bikescontroller.js"></script>
+  <script src="/javascripts/controllers/signupcontroller.js"></script>
+  <script src="/javascripts/controllers/editdonationcontroller.js"></script>
+  <script src="/javascripts/controllers/showbikecontroller.js"></script>
+  <style> .glyphicon-thumbs-up { cursor:pointer } </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+  <body ng-controller="mainController">
+  <div class=".container-fluid">
+      <!-- Content here -->
+
+    <!-- NAVBAR -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+          <a class="navbar-brand" href="#/"><span style="margin-right:5px; margin-left:10px ;display:inline-block;">
+            <img style="width: 25px"  src="./images/wrench-bike-icon-white.svg"></img>
+            </span>Rebike</a>
+          <button id="navbut" class="btn bmd-btn-icon dropdown-toggle btn-danger" type="button" id="ex2" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="material-icons">more_vert</i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#donations"> Donations</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#bikes"> Bikes </a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Donate
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#donate">Money</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#addbike">Bike </a>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+
+ <!-- MAIN CONTENT AND INJECTED VIEWS -->
+ <div id="main">
+
+  <div ng-view></div>
+
+</div> <!-- End of main div -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/FezVrasta/snackbarjs/1.1.0/dist/snackbar.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+    <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+  </div>
+  </body>
+</html>

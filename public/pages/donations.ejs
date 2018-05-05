@@ -1,0 +1,30 @@
+<div class="jumbotron" align="center">
+    <h1 align="center">Total amount already donated: {{amount | currency:'€'}}</h1>
+    <div class="row">
+        <div class="col-sm"></div>
+    </div>
+    <button type="button" class="btn btn-danger" ng-click="paymentFilter = {}">
+        All
+    </button>
+    <button type="button" class="btn btn-danger" ng-click="paymentFilter = {paymenttype: 'PayPal'}">
+        PayPal
+    </button>
+    <button type="button" class="btn btn-danger" ng-click="paymentFilter = {paymenttype: 'Direct'}">
+        Direct
+    </button>
+  <div id="donations" class="col-sm" ng-controller="donationsController as list" ng-repeat="donation in donations | orderBy:'-amount' | filter:paymentFilter" align="center" style="margin-bottom: 10px">
+      <div class="row">
+          <div class="list-group">
+              <a class="list-group-item list-group-item-action flex-column align-items-start">
+                  <div id="donated" class="d-flex w-100 justify-content-between">
+                      <h5  ng-click="find(donation._id)" class="mb-1"> {{donation.amount | currency:'€'}} with <span name="payment" class="badge badge-danger badge-pill">{{donation.paymenttype}}</span></h5>
+                      <button type="button" class="btn btn-danger" ng-click="delete(donation._id)">
+                          X
+                      </button>
+                  </div>
+              </a>
+          </div>
+        </div>
+    </div>
+    <footer>Click text to edit donation</footer>
+</div>

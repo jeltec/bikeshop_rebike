@@ -1,0 +1,42 @@
+body{
+  background-color: #e9ebef;/*#444444;*/
+}
+form{vertical-align: middle;}
+.form-group{
+  vertical-align:middle;
+  margin-top: 20px;
+}
+
+.list-group-item{
+  width: 350px;
+}
+
+#donatebtn{
+  margin-bottom: 10px;
+}
+.list-group-item:hover{
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.custom-file-control, .form-control, .is-focused .custom-file-control, .is-focused .form-control {
+  background-image: linear-gradient(0deg,#d44539 2px,rgba(0,150,136,0) 0),linear-gradient(0deg,rgba(0,0,0,.26) 1px,transparent 0);
+}
+
+.card:hover, .img-thumbnail:hover{
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+@media (min-width: 992px) {
+  #navbut{
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 900px) {
+  .img-thumbnail{
+    width: 350px;
+  }
+}
+
+.btn.bmd-btn-icon{
+  color: red;
+}
